@@ -18,17 +18,18 @@
     font-family: "나눔스퀘어", "맑은고딕";
 }
 
-body { overflow-x: hidden; }
+body { overflow-x: hidden; min-width: 480px; }
 ol, ul { list-style: none; }
 button, a, label { cursor: pointer; }
 a, a:hover { color: inherit; text-decoration: underline; }
 svg { height: 20px; margin-right: 5px; }
-.icon { fill: var(--darkgreen); }
+.icon { fill: #505050; }
 .row { margin-left: 0; margin-right: 0; }
 
 .text-main { color: var(--main); }
 .text-green { color: var(--darkgreen); }
 .text-black { color: #505050; }
+.text-muted { color: #DDD; }
 
 .text-white-muted { color: #fffa; }
 .w-100 { width: 100% !important; }
@@ -49,7 +50,12 @@ svg { height: 20px; margin-right: 5px; }
 .padding { padding: 80px 0; }
 .b-padding { padding: 120px 0; }
 
-.description { word-break: keep-all; margin: 15px 0; }
+.description {
+    word-break: keep-all; 
+    margin: 15px 0; 
+    line-height: 2.2em;
+    color: #707070;
+}
 
 /* List-title
 */
@@ -187,7 +193,7 @@ svg { height: 20px; margin-right: 5px; }
 /* Top 
 */
 
-#top { background-color: #FAFAFA; height: 40px; color: var(--darkgreen); }
+#top { background-color: #FAFAFA; height: 40px; color: #505050; }
 
 /* Header 
 */
@@ -249,8 +255,8 @@ svg { height: 20px; margin-right: 5px; }
 #nav .sub a:not(:last-child) { border-bottom: 0; }
 
 #nav .item:hover > a { color: var(--main); }
-#nav .item .sub a:hover { color: var(--main); }
-#nav .item:hover { border-bottom: 5px solid var(--main); }
+#nav .item .sub a:hover { color: var(--main); background-color: #fafafa; }
+#nav .item:hover { border-bottom: 5px solid var(--main); background-color: #fbfbfb; }
 #nav .item:hover > .sub {
     transform: translateY(0);
     opacity: 1;
@@ -309,8 +315,8 @@ svg { height: 20px; margin-right: 5px; }
     left: 0;
     top: 0;
     transform: translate(-50%, -50%);
-    width: 230vw;
-    height: 230vw;
+    width: calc(200vw + 200vh);
+    height: calc(200vw + 200vh);
     border-radius: 50%;
     z-index: 3;
     overflow: hidden;
@@ -361,9 +367,9 @@ svg { height: 20px; margin-right: 5px; }
 @keyframes slide {
     0.0000% { width: 0; height: 0; z-index: 0; }
     20.000% { width: 0; height: 0; z-index: 2; }
-    33.333% { width: calc(150vw + 150vh); height: calc(150vw + 150vh); z-index: 2; }
-    53.333% { width: calc(150vw + 150vh); height: calc(150vw + 150vh); z-index: 1; }
-    66.666% { width: calc(150vw + 150vh); height: calc(150vw + 150vh); z-index: 1; }
+    33.333% { width: calc(200vw + 200vh); height: calc(200vw + 200vh); z-index: 2; }
+    53.333% { width: calc(200vw + 200vh); height: calc(200vw + 200vh); z-index: 1; }
+    66.666% { width: calc(200vw + 200vh); height: calc(200vw + 200vh); z-index: 1; }
     66.667% { width: 0; height: 0; z-index: 0; }
     100.00% { width: 0; height: 0; z-index: 0; }
 }
@@ -514,6 +520,7 @@ svg { height: 20px; margin-right: 5px; }
 
 #footer .link-list a {
     padding: 10px 0;
+    text-decoration: none;
 }
 
 #footer .info-list p {
@@ -551,7 +558,7 @@ svg { height: 20px; margin-right: 5px; }
     #header { height: auto; min-height: var(--header-height); }
 
     #visual { font-size: 14px; }
-    #visual:not(.sub) { height: 400px; }
+    #visual:not(.sub) { --height: 400px; }
     #visual:not(.sub) .container-xl { transform: translateY(-50%) }
     #visual:not(.sub) h1 { font-size: 2.5em; }
 
@@ -583,6 +590,7 @@ svg { height: 20px; margin-right: 5px; }
         right: 0;
         opacity: 0.2;
     }
+    #sub-1 .image img { height: 300px;  }
 }
 
 
