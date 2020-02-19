@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICF | 이천도자기축제</title>
+    <script src="jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- TOP -->
+    <div id="top" class="d-none d-lg-block">
+        <div class="container-xl d-flex justify-content-between align-items-center">
+            <div class="left d-flex py-2">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                        <symbol id="Email" viewBox="-33 -24 66 48">
+                            <path class="icon" d="M-33,24v-48h66v48H-33z M0-6.7l8.3,6L25.8-19h-51.6L-8.3-0.8L0-6.7z M0,1.9L-21,17h42L0,1.9z M-10.8,1L-28-17   v30.4L-10.8,1z M28-17L10.8,1L28,13.4V-17z"/>
+                        </symbol>
+                        <use xlink:href="#Email" width="66" height="48" id="XMLID_2_" x="-33" y="-24" transform="matrix(0.6312 0 0 -0.6312 25.0464 22.105)" style="overflow:visible;"/>
+                    </svg>
+                    ceramics.icheon@cerawork.or.kr
+                </div>
+                <div class="ml-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                        <symbol id="Telephone" viewBox="-4.9 -7.6 14.8 14.8">
+                            <g>
+                                <path class="icon" d="M-0.4,4.2c0,0-0.7-5.3,3.6-9.9l2.6-0.1L6-5.5L4.4-3L3.5-3.3L1.3,2.4l0.9,0.6L1.9,5.9H1.5L-0.4,4.2z"/>
+                                <polygon class="icon" points="2.5,5.9 2.8,3.1 3.3,3.3 3.2,5.8    "/>
+                                <polygon class="icon" points="4.8,-2.8 6.5,-5.2 7,-4.8 5.5,-2.5    "/>
+                            </g>
+                        </symbol>
+                        <use xlink:href="#Telephone" width="14.8" height="14.8" id="XMLID_1_" x="-4.9" y="-7.6" transform="matrix(3.4828 0 0 -3.4828 16.7833 25.3402)" style="overflow:visible;"/>
+                        </svg>
+                    031-645-3091
+                </div>
+            </div>
+            <div class="right d-flex">
+                <div>
+                    <a href="#" class="mr-1">로그인</a>후 서비스를 이용하실 수 있습니다.
+                </div>
+                <div class="text-black ml-3">
+                    계정이 없으신가요? <a href="#" class="ml-1">회원가입하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <input type="checkbox" id="menu-open" hidden>
+    <div id="header">
+        <div class="container-xl h-100">
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between h-100">
+                <a href="index.html" class="logo">
+                    <img src="images/B_Logo.png" alt="이천도자기축제" height="80">
+                </a>
+                <div id="nav" class="d-none d-lg-flex h-100 justify-content-between align-items-center">
+                    <div class="item h-100 px-4 d-flex justify-content-center align-items-center">
+                        <a href="sub1.html">행사소개</a>
+                        <div class="sub">
+                            <a href="sub1.html">축제개요</a>
+                            <a href="sub2.html">이천도자기이야기</a>
+                        </div>
+                    </div>
+                    <div class="item h-100 px-4 d-flex justify-content-center align-items-center">
+                        <a href="#">축제프로그램</a>
+                    </div>
+                    <div class="item h-100 px-4 d-flex justify-content-center align-items-center">
+                        <a href="#">축제소식</a>
+                    </div>
+                    <div class="item h-100 px-4 d-flex justify-content-center align-items-center">
+                        <a href="#">축제자료실</a>
+                    </div>
+                    <div class="item h-100 px-4 d-flex justify-content-center align-items-center">
+                        <a href="#">음식 및 숙박</a>
+                        <div class="sub">
+                            <a href="#">음식</a>
+                            <a href="#">숙박</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="mobile-nav" class="d-lg-none">
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="sub1.html">행사소개</a>
+                        <div class="sub d-flex flex-column">
+                            <a href="sub1.html">축제개요</a>
+                            <a href="sub2.html">이천도자기이야기</a>
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="#">축제프로그램</a>
+                    </div>
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="#">축제소식</a>
+                    </div>
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="#">축제자료실</a>
+                    </div>
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="#">음식 및 숙박</a>
+                        <div class="sub d-flex flex-column">
+                            <a href="#">음식</a>
+                            <a href="#">숙박</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <label for="menu-open" class="menu-door d-lg-none">
+            <img src="images/menu.png" alt="menu">
+        </label>
+    </div>
+
+    <!-- VISUAL -->
+    <div id="visual" class="sub">
+        <div class="cover">
+            <div class="bgp-center-bottom" style="background-image: url(images/slide_3.jpg)"></div>
+        </div>
+        <div class="container-xl">
+            <div class="col-12 mx-auto">
+                <h4 class="path">축제소개 > 인천도자기이야기</h4>
+                <h1 class="title">Incheon Ceramic Story</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="sub-2">
+        <div class="container b-padding">
+            <div class="section-title">
+                <h1>인천 도자기 이야기</h1>
+            </div>
+            <div class="pl-5 pt-5">
+                <h5 class="list-title" data-no="1">역사적 배경</h5>
+                <p class="description mb-5">이천에서 도자기가 만들어졌다는 사실은 효양산과 장동리, 설봉산성 등에서 출토된 유물들로 확인할 수 있습니다. 
+                    이 세지역에서는 대형 항아리와 옹기, 연대가 훨씬 오랜 무문토기, 선사시대 토기 파편 및 삼국시대 각 나라의 기와와 
+                    토기파편들도 함께 출토되었습니다.
+                    따라서 이천은 적어도 청동기시대부터 토기제작이 활발하게 이루어진 졌으며 그 후 백제와 고구려 점령기를 거친 후 
+                    삼국시대 후반까지 패권 각축장이었던 탓으로 삼국 토기문화의 흔적들이 혼재되어 나타났습니다. </p>
+                <h5 class="list-title" data-no="2">근·현대적의미의 이천도자기 발생</h5>
+                <p class="description mb-5">1955년과 56년에 각각 설립된 한국조형문화연구소와 한국미술품연구소에서는 고려청자, 
+                    조선백자등의 재현을 위해 노력하였으나 재정적인 어려움 때문에 몇 년을 지탱하지 못하고 문을 닫게 되었습니다. 
+                    두 연구소에서 일했던 도공들은 자연스럽게 이천으로 자리를 옮겼고 서울에서 지리적으로 가깝고 도자기의 명맥을 유지하고 있는 
+                    이천에서 도자기를 연구하고 실습하기 위해 모이게 되었습니다 </p>
+                <h5 class="list-title" data-no="3">인천도자기축제의 국제화</h5>
+                <p class="description mb-5"> 1981년 4월 한국전승도예협회가 설립됨으로서 보다 조직적인 틀을 갖추고 매년 회원전을 통해 도예가들의 활동을 
+                    알리는 한편 도예의 저변 확대를 위해 노력하였습니다. 
+                    또한 1987년 9월부터 시작된 이천도자기축제의 국제화와 한국도자기산업 발전이라는 목적을 가지고 
+                    1995년 4월 이천도자기조합이 설립되었습니다. 이와 같은 노력들은 이천도자기축제를 활성화시킴으로써 
+                    매년 국내외의 사람들에게 이천 도자문화의 역사와 전통미의 우수성을 알리는 계기를 마련하였고 
+                    세계도자기 엑스포 개최를 현실화 되게 하였습니다.</p>
+                <h5 class="list-title" data-no="4">인천도자기 특징</h5>
+                <p class="description mb-5">신비로운 푸른 빛깔과 우아한 선을 지닌 고려청자나 소박하고 꾸밈이 없는 느낌의 조선백자등은 우리 민족의 뛰어난
+                    예술감각을 말해주는 자랑스러운 민족문화의 유산입니다. 
+                   근래에 와서 이천 특산물을 이야기할때에는 누구나 도자기를 첫 손가락에 꼽게 되는데, 그만큼 우리 이천이 도자기의
+                    대표적인 산지로 이름나있고, 특히 300여개의 도자기 가마가 모여있는 신둔면 일대는 우리나라의 대표적인 도예촌으로 유명합니다. 
+                   이와같이 이천이 도자기의 명산지로 이름을 떨치게 된 데에는 도자기를 만드는데 필요한 흙이나 그것을 굽기 위한 
+                   땔나무를 비교적 쉽게 구할 수 있다는 외적인 여건도 있겠지만, 그보다 더 큰 이유는 전통 도자기를 
+                   재현해 낸 도공들의 장인정신 때문일 것입니다. 많은 도공들이 모여들면서 도자기에 대한 끊임없은 연구와 창작이 이루어지고
+                   청자와 백자, 분청으로 이어지는 관상용 전통도자기 뿐만 아니라 현대적인 감각의 생활도자기도 생산하고 있습니다. 
+                   </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <div class="row align-items-center align-items-lg-start">
+                <div class="col-12 col-lg-3 pt-5 order-2 order-lg-1 text-center text-lg-left">
+                    <img src="images/BW_Logo.png" alt="이천도자기축제" height="80">
+                </div>
+                <div class="link-list col-12 col-lg-3 pt-5 order-1">
+                    <h5 class="footer-title">바로가기</h5>
+                    <div class="row mx-0">
+                        <a href="#" class="l-item col-4 col-lg-6">축제소개</a>
+                        <a href="#" class="l-item col-4 col-lg-6">축제프로그램</a>
+                        <a href="#" class="l-item col-4 col-lg-6">축제소식</a>
+                        <a href="#" class="l-item col-4 col-lg-6">축제자료실</a>
+                        <a href="#" class="l-item col-4 col-lg-6">음식 및 숙박</a>
+                    </div>
+                </div>
+                <div class="info-list col-12 col-lg-6 pt-5 order-1">
+                    <h5 class="footer-title">문의하기</h5>
+                    <div class="row mx-0">
+                        <p class="col-12">주소 : 경기도 이천시 신둔면 도자예술로 62번길 113-71</p>
+                        <p class="col-6">사업자번호 : 126-82-04231</p>
+                        <p class="col-6">이메일 : ceramics.icheon@cerawork.or.kr</p>
+                        <p class="col-6">대표번호 : 031-645-3091</p>
+                        <p class="col-6">팩스 : 031-631-2199</p>
+                    </div>
+                </div>
+                <div class="col-12 py-3 order-3 text-center text-lg-left">Copyright (c)2016 이천도자기축제. All Right Reserved. </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

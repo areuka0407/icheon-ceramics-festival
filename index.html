@@ -12,39 +12,56 @@
 <body>
     <!-- TOP -->
     <div id="top" class="d-none d-lg-block">
-        <div class="container-xl d-flex justify-content-between align-items-center text-white">
+        <div class="container-xl d-flex justify-content-between align-items-center">
             <div class="left d-flex py-2">
                 <div>
-                    <img src="images/i_email.png" alt="email" class="icon mr-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                        <symbol id="Email" viewBox="-33 -24 66 48">
+                            <path class="icon" d="M-33,24v-48h66v48H-33z M0-6.7l8.3,6L25.8-19h-51.6L-8.3-0.8L0-6.7z M0,1.9L-21,17h42L0,1.9z M-10.8,1L-28-17   v30.4L-10.8,1z M28-17L10.8,1L28,13.4V-17z"/>
+                        </symbol>
+                        <use xlink:href="#Email" width="66" height="48" id="XMLID_2_" x="-33" y="-24" transform="matrix(0.6312 0 0 -0.6312 25.0464 22.105)" style="overflow:visible;"/>
+                    </svg>
                     ceramics.icheon@cerawork.or.kr
                 </div>
                 <div class="ml-3">
-                    <img src="images/i_phone.png" alt="email" class="icon mr-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                        <symbol id="Telephone" viewBox="-4.9 -7.6 14.8 14.8">
+                            <g>
+                                <path class="icon" d="M-0.4,4.2c0,0-0.7-5.3,3.6-9.9l2.6-0.1L6-5.5L4.4-3L3.5-3.3L1.3,2.4l0.9,0.6L1.9,5.9H1.5L-0.4,4.2z"/>
+                                <polygon class="icon" points="2.5,5.9 2.8,3.1 3.3,3.3 3.2,5.8    "/>
+                                <polygon class="icon" points="4.8,-2.8 6.5,-5.2 7,-4.8 5.5,-2.5    "/>
+                            </g>
+                        </symbol>
+                        <use xlink:href="#Telephone" width="14.8" height="14.8" id="XMLID_1_" x="-4.9" y="-7.6" transform="matrix(3.4828 0 0 -3.4828 16.7833 25.3402)" style="overflow:visible;"/>
+                        </svg>
                     031-645-3091
                 </div>
             </div>
             <div class="right d-flex">
                 <div>
-                    <a href="#" class="font-weight-bold mr-1">로그인</a>후 서비스를 이용하실 수 있습니다.
+                    <a href="#" class="mr-1">로그인</a>후 서비스를 이용하실 수 있습니다.
                 </div>
-                <div class="text-white-muted ml-3">
-                    계정이 없으신가요? <a href="#" class="font-weight-bold ml-1">회원가입하기</a>
+                <div class="text-black ml-3">
+                    계정이 없으신가요? <a href="#" class="ml-1">회원가입하기</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- HEADER -->
+    <input type="checkbox" id="menu-open" hidden>
     <div id="header">
-        <div class="container h-100">
-            <div class="d-flex align-items-center justify-content-between h-100">
-                <a href="index.html" class="logo"></a>
+        <div class="container-xl h-100">
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between h-100">
+                <a href="index.html" class="logo">
+                    <img src="images/B_Logo.png" alt="이천도자기축제" height="80">
+                </a>
                 <div id="nav" class="d-none d-lg-flex h-100 justify-content-between align-items-center">
                     <div class="item h-100 px-4 d-flex justify-content-center align-items-center">
-                        <a href="#">행사소개</a>
+                        <a href="sub1.html">행사소개</a>
                         <div class="sub">
-                            <a href="#">축제개요</a>
-                            <a href="#">이천도자기이야기</a>
+                            <a href="sub1.html">축제개요</a>
+                            <a href="sub2.html">이천도자기이야기</a>
                         </div>
                     </div>
                     <div class="item h-100 px-4 d-flex justify-content-center align-items-center">
@@ -64,8 +81,36 @@
                         </div>
                     </div>
                 </div>
+                <div id="mobile-nav" class="d-lg-none">
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="sub1.html">행사소개</a>
+                        <div class="sub d-flex flex-column">
+                            <a href="sub1.html">축제개요</a>
+                            <a href="sub2.html">이천도자기이야기</a>
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="#">축제프로그램</a>
+                    </div>
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="#">축제소식</a>
+                    </div>
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="#">축제자료실</a>
+                    </div>
+                    <div class="item d-flex flex-column justify-content-center align-items-start">
+                        <a href="#">음식 및 숙박</a>
+                        <div class="sub d-flex flex-column">
+                            <a href="#">음식</a>
+                            <a href="#">숙박</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <label for="menu-open" class="menu-door d-lg-none">
+            <img src="images/menu.png" alt="menu">
+        </label>
     </div>
 
     <!-- VISUAL -->
@@ -79,13 +124,14 @@
         <div class="cover">
             <div class="bgp-center-bottom" style="background-image: url(images/slide_3.jpg)"></div>
         </div>
-        <div class="container">
-            <h4 class="text-white-muted">이천도자기축제</h4>
-            <h1 class="pb-5 mt-3">일곱 빛깔 보물찾기</h1>
-            <h5 class="mt-4">2020. 4. 11.(토) ~ 4. 19.(일)</h5>
-            <p class="text-white-muted mt-4">이천에서 전통적인 우리 민족문화의 유산들을 직접 만나보세요!</p>
-            <p class="text-white-muted">신비로운 푸른 빛깔과 우아한 선을 지닌 고려청자나 소박하고 꾸밈이 없는 느낌의 조석백자들이</p>
-            <p class="text-white-muted">이천도자기축제에서 여러분을 기다립니다.</p>
+        <div class="container-xl">
+            <div class="col-lg-6 col-md-12">
+                <h4 class="text-center text-lg-left">이천도자기축제</h4>
+                <h1 class="pb-5 mt-3 text-center text-lg-left">일곱 빛깔 보물찾기</h1>
+                <h5 class="mt-4 d-none d-lg-inline-block">2020. 4. 11.(토) ~ 4. 19.(일)</h5>
+                <p class="mt-4 mb-0 d-none d-lg-inline-block">이천에서 전통적인 우리 민족문화의 유산들을 직접 만나보세요!</p>
+                <p class=" d-none d-lg-inline-block">신비로운 푸른 빛깔과 우아한 선을 지닌 고려청자나 소박하고 꾸밈이 없는 느낌의 조석백자들이 이천도자기축제에서 여러분을 기다립니다.</p>
+            </div>
         </div>
     </div>
 
@@ -111,9 +157,118 @@
     </div>
 
     <div id="festival-info">
-        <div class="container-fluid padding">
+        <div class="container-fluid padding overflow-hidden">
             <div class="sub-title green center">
                 <h5>축제내용</h5>
+            </div>
+            <div class="row px-5 mt-5 py-4">
+                <div class="f-item my-4 my-lg-0 col-12 col-lg-3 d-flex flex-lg-column align-items-center">
+                    <div class="image" style="background-image: url(images/f-info_1.jpg);"></div>
+                    <div class="text col-md-9 col-lg-12 text-lg-center mt-lg-5 ml-lg-0 ml-4">
+                        <b class="title">물레체험</b>
+                        <p class="mt-2">도예가와 함께 물레를 돌리는 체험을 할 수 있습니다. 특색있는 도자기를 만들어 현장에서 가져가거나 택배로 받아볼 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="f-item my-4 my-lg-0 col-12 col-lg-3 d-flex flex-lg-column align-items-center">
+                    <div class="image" style="background-image: url(images/f-info_2.jpg);"></div>
+                    <div class="text col-md-9 col-lg-12 text-lg-center mt-lg-5 ml-lg-0 ml-4">
+                        <b class="title">색칠체험</b> 
+                        <p class="mt-2">도자기에 안료를 사용하여 원하는 그림을 새겨 넣는 체험을 할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="f-item my-4 my-lg-0 col-12 col-lg-3 d-flex flex-lg-column align-items-center">
+                    <div class="image" style="background-image: url(images/f-info_3.jpg);"></div>
+                    <div class="text col-md-9 col-lg-12 text-lg-center mt-lg-5 ml-lg-0 ml-4">
+                        <b class="title">흙을 빚는 사람들</b>
+                        <p class="mt-2">도자기 명장 이천을 이끌어 가는 장인들을 소개합니다.</p>
+                    </div>
+                </div>
+                <div class="f-item my-4 my-lg-0 col-12 col-lg-3 d-flex flex-lg-column align-items-center">
+                    <div class="image" style="background-image: url(images/f-info_4.jpg);"></div>
+                    <div class="text col-md-9 col-lg-12 text-lg-center mt-lg-5 ml-lg-0 ml-4">
+                        <b class="title">세라마트</b>
+                        <p class="mt-2">이천 도예인들의 수준높은 도자예술품을 전시합니다. 구경함과 동시에 직접 구매도 할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="other">
+        <div class="container padding">
+            <div class="row">
+                <div id="notice" class="col-12 col-lg-6 py-4">
+                    <div class="d-flex justify-content-between align-items-end">
+                        <div class="sub-title red d-inline-block">
+                            <h5>공지사항</h5>
+                        </div>
+                        <a href="#">+ 더보기</a>
+                    </div>
+                    <div class="list-group-flush mt-4">
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div class="title">제34회 이천도자기축제 버스킹 공연 재능기부자 모집</div>
+                            <div class="date text-right">2020.01.18</div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div class="title">제34회 이천도자기축제 도자기제작 및 기타공예 시연 참여업체 모집</div>
+                            <div class="date text-right">2019.01.16</div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div class="title">제34회 이천도자기축제 기본계획</div>
+                            <div class="date text-right">2019.12.10</div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <div class="title">제34회 이천도자기축제 도자기 수집 공고</div>
+                            <div class="date text-right">2019.12.08</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gallery" class="col-12 col-lg-6 py-4">
+                    <div class="d-flex justify-content-between align-items-end">
+                        <div class="sub-title red d-inline-block">
+                            <h5>갤러리</h5>
+                        </div>
+                        <a href="#">+ 더보기</a>
+                    </div>
+                    <div class="list mt-4">
+                        <div>
+                            <div class="image" style="background-image: url(images/gallery_1.jpg);"></div>
+                            <div class="image" style="background-image: url(images/gallery_2.jpg);"></div>
+                            <div class="image" style="background-image: url(images/gallery_3.jpg);"></div>
+                            <div class="image" style="background-image: url(images/gallery_4.jpg);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row align-items-center align-items-lg-start">
+                <div class="col-12 col-lg-3 pt-5 order-2 order-lg-1 text-center text-lg-left">
+                    <img src="images/BW_Logo.png" alt="이천도자기축제" height="80">
+                </div>
+                <div class="link-list col-12 col-lg-3 pt-5 order-1">
+                    <h5 class="footer-title">바로가기</h5>
+                    <div class="row mx-0">
+                        <a href="#" class="l-item col-4 col-lg-6">축제소개</a>
+                        <a href="#" class="l-item col-4 col-lg-6">축제프로그램</a>
+                        <a href="#" class="l-item col-4 col-lg-6">축제소식</a>
+                        <a href="#" class="l-item col-4 col-lg-6">축제자료실</a>
+                        <a href="#" class="l-item col-4 col-lg-6">음식 및 숙박</a>
+                    </div>
+                </div>
+                <div class="info-list col-12 col-lg-6 pt-5 order-1">
+                    <h5 class="footer-title">문의하기</h5>
+                    <div class="row mx-0">
+                        <p class="col-12">주소 : 경기도 이천시 신둔면 도자예술로 62번길 113-71</p>
+                        <p class="col-6">사업자번호 : 126-82-04231</p>
+                        <p class="col-6">이메일 : ceramics.icheon@cerawork.or.kr</p>
+                        <p class="col-6">대표번호 : 031-645-3091</p>
+                        <p class="col-6">팩스 : 031-631-2199</p>
+                    </div>
+                </div>
+                <div class="col-12 py-3 order-3 text-center text-lg-left">Copyright (c)2016 이천도자기축제. All Right Reserved. </div>
             </div>
         </div>
     </div>
